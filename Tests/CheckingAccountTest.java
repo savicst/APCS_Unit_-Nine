@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CheckingAccountTest {
 
-    /*
+
     @Test
     void deposit() {
         CheckingAccount c = new CheckingAccount(100);
@@ -50,5 +50,5 @@ class CheckingAccountTest {
         assertEquals(200, b.getBalance());
     }
 
-     */
+
 }

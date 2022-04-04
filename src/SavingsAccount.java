@@ -21,6 +21,9 @@ public class SavingsAccount extends BankAccount
      */
     public SavingsAccount(double initialBalance, double rate) {
         super(initialBalance);
+        if (initialBalance< MINIMUM_BALANCE){
+            setBalance(MINIMUM_BALANCE);
+        }
         interestRate = rate;
     }
 
@@ -29,7 +32,8 @@ public class SavingsAccount extends BankAccount
      *   Adds the earned interest to the account balance.
      */
     public void addInterest()   {
-        // <<< CODE NOT COMPLETE >>>
+        double interest = interestRate * getBalance();
+        deposit(interest);
     }
 
     /** <<< COMPLETE THIS METHOD>>>
@@ -38,7 +42,9 @@ public class SavingsAccount extends BankAccount
      *  resulting balance > MINIMUM_BALANCE
      */
     public void withdraw(double amount)  {
-        // <<< Code Not Complete >>>
+        if(getBalance()>= MINIMUM_BALANCE + amount){
+            super.withdraw(amount);
+        }
     }
 }
 

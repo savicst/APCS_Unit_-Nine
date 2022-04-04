@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SavingsAccountTest {
 
 
-/*
+
     @Test
     public void testDefaultConstructor() {
         SavingsAccount sa1 = new SavingsAccount(0.025);
@@ -28,6 +28,7 @@ class SavingsAccountTest {
     public void testInterest() {
         SavingsAccount sa1 = new SavingsAccount(25, 0.025);
         double expected = 25.625;
+        //interest was never added?
         double actual = sa1.getBalance();
         assertEquals(expected, actual);
     }
@@ -53,5 +54,5 @@ class SavingsAccountTest {
         assertEquals(25, sa1.getBalance());
     }
 
- */
+
 }
