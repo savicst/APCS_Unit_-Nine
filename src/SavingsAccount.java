@@ -2,7 +2,7 @@
  *       <<< THIS CODE IS NOT COMPLETE >>>
  *   An account that earns interest at a fixed rate.
  */
-public class SavingsAccount
+public class SavingsAccount extends BankAccount
 {
     private double interestRate;
     public static final double MINIMUM_BALANCE = 10;
@@ -11,7 +11,8 @@ public class SavingsAccount
      *   Constructs a bank account with a given interest rate.
      */
     public SavingsAccount(double rate)  {
-
+        super(MINIMUM_BALANCE);
+        interestRate = rate;
     }
 
     /**   <<< COMPLETE THIS METHOD >>>
@@ -19,8 +20,8 @@ public class SavingsAccount
      *   and a given interest rate.
      */
     public SavingsAccount(double initialBalance, double rate) {
-
-
+        super(initialBalance);
+        interestRate = rate;
     }
 
 

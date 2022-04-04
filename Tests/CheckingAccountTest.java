@@ -37,7 +37,7 @@ class CheckingAccountTest {
         CheckingAccount a = new CheckingAccount(100);
         CheckingAccount b = new CheckingAccount(200);
         a.transfer(50, b);
-        assertEquals(149.5, a.getBalance());
+        assertEquals(49.5, a.getBalance());
         assertEquals(249.5, b.getBalance());
     }
 
