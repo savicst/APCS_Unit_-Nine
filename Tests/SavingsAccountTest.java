@@ -28,7 +28,7 @@ class SavingsAccountTest {
     public void testInterest() {
         SavingsAccount sa1 = new SavingsAccount(25, 0.025);
         double expected = 25.625;
-        //interest was never added?
+        sa1.addInterest();
         double actual = sa1.getBalance();
         assertEquals(expected, actual);
     }
