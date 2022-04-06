@@ -9,10 +9,6 @@ public class Rectangle extends Shape {
         height = 10;
     }
 
-    public Rectangle(double w, double h){
-        width = w;
-        height = h;
-    }
 
     public Rectangle(double w, double h, String c, boolean f){
         super(c,f);

@@ -5,10 +5,6 @@ public class Circle extends Shape {
         super();
         radius = 10;
     }
-    public Circle(double r){
-        super();
-        radius = r;
-    }
     public Circle(double r, String c, boolean f){
         super(c,f);
         radius = r;

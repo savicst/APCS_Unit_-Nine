@@ -8,12 +8,7 @@ public class Triangle extends Shape{
         side3 = 2.0;
     }
 
-    public Triangle(double s1, double s2, double s3) {
-        super();
-        side1 = s1;
-        side2 = s2;
-        side3 = s3;
-    }
+
 
     public Triangle(double s1, double s2, double s3, String c, boolean f) {
         super(c,f);
