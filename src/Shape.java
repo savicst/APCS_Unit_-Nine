@@ -28,4 +28,8 @@ public class Shape {
         return "Shape is " + color + " and filled is " + filled;
     }
 
+    public double getArea(){
+        return 0.0;
+    }
+
 }
