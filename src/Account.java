@@ -11,6 +11,11 @@ public class Account
         this.name = name;
         this.balance = balance;
     }
+    public boolean equals(Object obj){
+        Account b = (Account) obj;
+        return (this.balance == b.balance && this.name.equals(b.name));
+
+    }
 
     public String toString() {
         return name + ", " + balance;
