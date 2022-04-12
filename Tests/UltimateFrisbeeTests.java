@@ -114,7 +114,7 @@ class UltimateFrisbeeTests {
 
     @Test
     public void testNoHandlers() {
-        assertEquals("", teamNH.getCutters());
+        assertEquals("", teamNH.getHandlers());
     }
 
     @Test
