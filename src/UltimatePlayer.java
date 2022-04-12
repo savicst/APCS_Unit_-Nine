@@ -22,7 +22,12 @@ public class UltimatePlayer extends Player{
         position = "handler";
     }
 
-    public String getPosition(){}
+    public String getPosition(){
+        return position;
+    }
+    public String toString(){
+        return super.toString() + "\n   Jersey #: " + jersey + "\n   Position: " + position;
+    }
 
 
 }
